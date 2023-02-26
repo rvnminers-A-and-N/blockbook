@@ -35,6 +35,7 @@ import (
 	"github.com/trezor/blockbook/bchain/coins/koto"
 	"github.com/trezor/blockbook/bchain/coins/liquid"
 	"github.com/trezor/blockbook/bchain/coins/litecoin"
+	"github.com/trezor/blockbook/bchain/coins/meowcoin"
 	"github.com/trezor/blockbook/bchain/coins/monacoin"
 	"github.com/trezor/blockbook/bchain/coins/monetaryunit"
 	"github.com/trezor/blockbook/bchain/coins/myriad"
@@ -134,6 +135,7 @@ func init() {
 	BlockChainFactories["ECash"] = ecash.NewECashRPC
 	BlockChainFactories["Avalanche"] = avalanche.NewAvalancheRPC
 	BlockChainFactories["Avalanche Archive"] = avalanche.NewAvalancheRPC
+	BlockChainFactories["Meowcoin"] = meowcoin.NewMeowcoinRPC
 }
 
 // GetCoinNameFromConfig gets coin name and coin shortcut from config file
